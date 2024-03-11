@@ -16,7 +16,7 @@ Imagine that you're interested in doing some churn research. That is to say, you
 
 There's a "checking" period where you're going to check who is still around. And this is information that you can use to construct a label. There's also an "input" period in which you're going to construct features for a machine learning model. 
 
-But here is where you have to be very careful! You should only use the checking period to understand which customers are still around. If you use any data from this period, or from any part after the input period, then you are at risk of leaking data that your machine learning model does not have access to. 
+But here is where you have to be very careful! You should only use the checking period to understand which customers are still around. If you use any data from this period to generete ML features, or from any part after the input period, then you are at risk of leaking data that your machine learning model does not have access to in real life. 
 
 So one of the first features this library offers is to give you a safe way to generate these `X`, `y` pairs over time. Conceptually, it currently allows you to construct features from timeslots over time.
 
