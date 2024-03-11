@@ -60,4 +60,6 @@ The `dataset_generator` has the following arguments.
 - `step`: stepsize over time for new X,y-pairs. defaults to a month. 
 - `time_col`: column name that depicts the datetime stamp
 
+You can explore this function by copying it from the `scikit_churn/__init__.py` file. 
+
 This repository may grow, but for now we're eager to understand industry problems around these kinds of churn analyses better. We're particularily interested to see what one might do to remedy these temporal leakage issues for scikit-learn applications.
