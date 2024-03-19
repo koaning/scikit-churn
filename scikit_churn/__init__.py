@@ -32,8 +32,8 @@ def churn_dataset_generator(
     cutoff_start = pl.datetime_range(start_date, end_date, step, eager=True).alias(time_col)
     
     for start in cutoff_start.to_list():
-        train_info = df.filter(pl.col(time_col) < start, pl.col(time_col) < (start - timedelta(days=info_period)))
-        valid_info = df.filter(pl.col(time_col) > start, pl.col(time_col) < (start + timedelta(days=checking_period)))
+        train_info = df.filter(pl.col(time_col) < start, pl.col(time_col) > (start - timedelta(days=info_period)))
+        valid_info = df.filter(pl.col(time_col) >= start, pl.col(time_col) < (start + timedelta(days=checking_period)))
     
         target = valid_info.select(user_id).unique().with_columns(target=True)
 
