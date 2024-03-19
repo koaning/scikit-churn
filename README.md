@@ -6,7 +6,11 @@
 
 ## Livestream
 
+
+[![](imgs/livestream.png)](https://www.youtube.com/watch?v=uevp7zJTM_c)
+
 This work was part of a livestream and it may help to give some extra context. You can rewatch it on YouTube [here](https://www.youtube.com/watch?v=uevp7zJTM_c).
+
 # scikit-churn 
 
 This repository explores some moments where data leakage can occur in churn-related use-cases. You may need more than a scikit-learn pipeline to protect you against temporal data leaks. 
