@@ -9,7 +9,7 @@
 
 [![](imgs/livestream.png)](https://www.youtube.com/watch?v=uevp7zJTM_c)
 
-This work was part of a livestream and it may help to give some extra context. You can rewatch it on YouTube [here](https://www.youtube.com/watch?v=uevp7zJTM_c).
+This work was part of a [YouTube livestream](https://www.youtube.com/watch?v=uevp7zJTM_c) and it may help to watch for some extra context. 
 
 # scikit-churn 
 
